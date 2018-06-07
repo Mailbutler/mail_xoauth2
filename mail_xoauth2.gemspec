@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/Mailbutler/mail_xoauth2'
   s.summary     = %(Get access to IMAP and STMP via OAuth2, using the standard Ruby Net libraries)
   s.description = %(Get access to IMAP and STMP via OAuth2, using the standard Ruby Net libraries)
+  s.license     = 'MIT'
 
   s.required_rubygems_version = '>= 1.3.6'
 

@@ -1,7 +1,11 @@
-# mail_xoauth2 
+# mail_xoauth2 [![Gem Version](https://badge.fury.io/rb/mail_xoauth2.svg)](https://badge.fury.io/rb/mail_xoauth2)
 Get access to IMAP and STMP via OAuth2, using the standard Ruby Net libraries.
 
 This gem is based on and inspired by [gmail_xoauth](https://github.com/nfo/gmail_xoauth).
+
+## Install
+
+    $ gem install mail_xoauth2
 
 ## Usage
 
