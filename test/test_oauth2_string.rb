@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'helper'
 
 class TestOauth2String < Test::Unit::TestCase
@@ -22,8 +24,8 @@ class TestOauth2String < Test::Unit::TestCase
     oauth2_string = SomeNetClass.new.__send__('build_oauth2_string', user, oauth2_access_token, true)
 
     assert_equal(
-        Base64.strict_encode64("user=#{user}\1auth=Bearer #{oauth2_access_token}\1\1"),
-        oauth2_string
+      Base64.strict_encode64("user=#{user}\1auth=Bearer #{oauth2_access_token}\1\1"),
+      oauth2_string
     )
   end
 end
