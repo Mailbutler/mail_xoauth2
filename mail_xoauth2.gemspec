@@ -13,9 +13,7 @@ Gem::Specification.new do |s|
   s.description = %(Get access to IMAP and STMP via OAuth2, using the standard Ruby Net libraries)
 
   s.required_rubygems_version = '>= 1.3.6'
-  # s.rubyforge_project         = "mail_xoauth2"
 
-  s.add_dependency 'oauth', '>= 0.3.6'
   s.add_development_dependency 'mocha', '>= 0'
   s.add_development_dependency 'shoulda', '>= 0'
 
