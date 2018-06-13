@@ -23,8 +23,7 @@ module MailXoauth2
       check_auth_args user, oauth2_token
 
       auth_string = build_oauth2_string(user, oauth2_token)
-      b64_auth_string = Base64.strict_encode64(auth_string)
-      res = send_xoauth2(b64_auth_string)
+      res = send_xoauth2(base64_encode(auth_string))
 
       # See note about SMTP protocol exchange in https://developers.google.com/gmail/xoauth2_protocol
       res = get_final_status if res.continue?
