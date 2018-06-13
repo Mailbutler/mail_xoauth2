@@ -5,7 +5,7 @@ require 'net/imap'
 module MailXoauth2
   class ImapXoauth2Authenticator
     def process(_data)
-      build_oauth2_string(@user, @oauth2_token, true)
+      build_oauth2_string(@user, @oauth2_token)
     end
 
     private
