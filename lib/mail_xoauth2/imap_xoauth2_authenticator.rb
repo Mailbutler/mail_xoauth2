@@ -21,4 +21,4 @@ module MailXoauth2
   end
 end
 
-Net::IMAP.add_authenticator('XOAUTH2', MailXoauth2::ImapXoauth2Authenticator)
+Net::IMAP::SASL.add_authenticator('XOAUTH2', MailXoauth2::ImapXoauth2Authenticator)
