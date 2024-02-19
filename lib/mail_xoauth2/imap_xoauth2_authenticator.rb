@@ -21,7 +21,7 @@ module MailXoauth2
   end
 end
 
-if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('3.3.3')
+if Gem::Version.new(Net::IMAP::VERSION) >= Gem::Version.new('0.4.0')
   Net::IMAP::SASL.add_authenticator('XOAUTH2', MailXoauth2::ImapXoauth2Authenticator)
 else
   Net::IMAP.add_authenticator('XOAUTH2', MailXoauth2::ImapXoauth2Authenticator)
